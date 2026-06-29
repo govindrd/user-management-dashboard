@@ -55,6 +55,8 @@ npm run build
 npm run preview
 ```
 
+---
+
 ## Screenshot
 
 | Add User Screen | Edit User Screen | Home View | Search View |
@@ -67,5 +69,7 @@ npm run preview
 - **Edit User**: Demonstrates editing an existing user’s details in the same modal form.
 - **Home View**: Displays the main dashboard layout and user cards with department chips.
 - **Search View**: Highlights the dynamic search and filter controls for locating users quickly.
+
+---
 
 
