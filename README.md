@@ -2,6 +2,11 @@
 
 A simple React + Vite dashboard for managing user details with add, edit, delete, and search capabilities.
 
+---
+Live project: https://user-management-dashboard-govind.netlify.app/
+
+---
+
 ## Project Overview
 
 This project is a CRUD web application built using React and Vite. Users can:
