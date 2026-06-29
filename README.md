@@ -68,17 +68,4 @@ npm run preview
 - **Home View**: Displays the main dashboard layout and user cards with department chips.
 - **Search View**: Highlights the dynamic search and filter controls for locating users quickly.
 
-## Notes
 
-- The app uses `https://jsonplaceholder.typicode.com` as a mock backend. This means create/update/delete actions are simulated and do not persist permanently.
-- The UI is responsive and dynamically updates based on search and department filters.
-
-## Future Improvements
-
-If given more time, the next enhancements would include:
-
-- Replacing the mock API with a real backend or local JSON server
-- Adding pagination for large user lists
-- Introducing authentication and user permissions
-- Improving form UX with more detailed validation messages
-- Adding tests for components and API helpers
