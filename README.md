@@ -1,4 +1,4 @@
-﻿# User Management Dashboard
+﻿# User Management Dashboard (CRUD)
 
 A simple React + Vite dashboard for managing user details with add, edit, delete, and search capabilities.
 
