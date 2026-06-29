@@ -1,16 +1,84 @@
-# React + Vite
+﻿# User Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple React + Vite dashboard for managing user details with add, edit, delete, and search capabilities.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is a CRUD web application built using React and Vite. Users can:
 
-## React Compiler
+- View a list of users loaded from a mock backend API
+- Add new users via a modal form
+- Edit existing user details
+- Delete users with confirmation
+- Search and filter users by name, email, or department
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Packages and Why They Are Used
 
-## Expanding the Oxlint configuration
+- `react` and `react-dom`: Core React libraries for building the UI.
+- `vite`: Fast frontend bundler and development server.
+- `@vitejs/plugin-react`: Enables React support in Vite.
+- `axios`: Handles HTTP requests to the mock API.
+- `@mui/material` and `@mui/icons-material`: Provides a responsive, modern UI with ready-made React components.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Project Structure
+
+- `src/main.jsx` — Application entry point that mounts the React app.
+- `src/App.jsx` — Main app shell rendering the dashboard.
+- `src/Pages/Dashboard.jsx` — Dashboard page with user list, search, filters, and action controls.
+- `Components/UserForm.jsx` — Reusable user form modal for add/edit operations.
+- `src/api/userApi.js` — API helpers using Axios.
+- `src/api/axios.js` — Axios instance configuration.
+
+## Setup and Run
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start the development server:
+
+```bash
+npm run dev
+```
+
+3. Build for production:
+
+```bash
+npm run build
+```
+
+4. Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Screenshot
+
+| Add User Screen | Edit User Screen | Home View | Search View |
+| --- | --- | --- | --- |
+| ![Add User](src/assets/Add1.png) | ![Edit User](src/assets/Add2.png) | ![Home](src/assets/Home.png) | ![Search](src/assets/SEarch.png) |
+
+### Screenshot Descriptions
+
+- **Add User**: Shows the modal form used to add a new user with validation on all fields.
+- **Edit User**: Demonstrates editing an existing user’s details in the same modal form.
+- **Home View**: Displays the main dashboard layout and user cards with department chips.
+- **Search View**: Highlights the dynamic search and filter controls for locating users quickly.
+
+## Notes
+
+- The app uses `https://jsonplaceholder.typicode.com` as a mock backend. This means create/update/delete actions are simulated and do not persist permanently.
+- The UI is responsive and dynamically updates based on search and department filters.
+
+## Future Improvements
+
+If given more time, the next enhancements would include:
+
+- Replacing the mock API with a real backend or local JSON server
+- Adding pagination for large user lists
+- Introducing authentication and user permissions
+- Improving form UX with more detailed validation messages
+- Adding tests for components and API helpers
